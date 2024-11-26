@@ -13,8 +13,8 @@
     <h1>Registro de Instrumentos</h1>
     <form action="registrar_instrumento.php" method="post" enctype="multipart/form-data">
         <p>
-            <label for="nombre">Nombre Instrumento:</label>
-            <input type="text" id="nombre" name="nombre" />
+            <label for="nombre_instrumento">Nombre Instrumento:</label>
+            <input type="text" id="nombre_instrumento" name="nombre_instrumento" />
         </p>
         <p>
             <label for="precio">Precio:</label>

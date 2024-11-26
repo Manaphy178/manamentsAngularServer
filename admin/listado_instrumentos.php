@@ -18,7 +18,7 @@
              ya que cada elemento del array es un objetoInstrumento -->
         <?php foreach ($instrumentos as $instrumento) { ?>
             <div style="margin:10px">
-                <p>Nombre: <?php echo $instrumento["nombre"] ?></p>
+                <p>Nombre: <?php echo $instrumento["nombre_instrumento"] ?></p>
                 <p>Precio: <?php echo $instrumento["precio"] ?></p>
                 <p>Categoría: <?php echo $instrumento["categoria"] ?></p>
                 <p>Marca: <?php echo $instrumento["marca"] ?></p>

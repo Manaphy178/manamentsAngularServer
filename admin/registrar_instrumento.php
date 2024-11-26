@@ -2,7 +2,7 @@
 require "../librerias_php/setUp.php";
 
 $instrumento = R::dispense("instrumentos");
-$instrumento->nombre = $_POST["nombre"];
+$instrumento->nombre_instrumento = $_POST["nombre_instrumento"];
 $instrumento->precio = $_POST["precio"];
 $instrumento->descripcion = $_POST["descripcion"];
 $instrumento->marca = $_POST["marca"];
