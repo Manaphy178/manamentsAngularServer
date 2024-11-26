@@ -6,11 +6,16 @@ $json_recibido = json_decode(file_get_contents("php://input"));
 
 $pedido = R::dispense("pedidos");
 $pedido->nombre = $json_recibido->nombre;
+$pedido->telefono = $json_recibido->telefono;
 $pedido->direccion = $json_recibido->direccion;
 $pedido->provincia = $json_recibido->provincia;
 $pedido->poblacion = $json_recibido->poblacion;
-$pedido->cp = $json_recibido->cp;
-$pedido->tarjeta = $json_recibido->tarjeta;
+$pedido->poblacion = $json_recibido->poblacion;
+$pedido->tipotarjeta = $json_recibido->tipotarjeta;
+$pedido->numerotarjeta = $json_recibido->numerotarjeta;
+$pedido->titulartarjeta = $json_recibido->titulartarjeta;
+$pedido->fechacaducidad = $json_recibido->fechacaducidad;
+$pedido->ccv = $json_recibido->ccv;
 $id_pedido = R::store($pedido);
 
 

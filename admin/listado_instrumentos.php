@@ -25,7 +25,7 @@
                 <p>Tipo: <?php echo $instrumento["tipo"] ?></p>
                 <p>Gamma: <?php echo $instrumento["gamma"] ?></p>
                 <p>Descripción: <?php echo $instrumento["descripcion"] ?></p>
-                <img src="../imagenes/<?php echo $instrumento["id"] ?>.jpg" height="120px">
+                <img src="../imagenes/instrumentos/<?php echo $instrumento["id"] ?>.jpg" height="120px">
                 <br>
                 <a onclick="return confirm('Estas seguro?')" href="?accion=eliminar&id=<?= $instrumento["id"] ?>">Eliminar</a>
             </div>

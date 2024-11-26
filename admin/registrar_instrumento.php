@@ -13,6 +13,6 @@ $instrumento->estado = $_POST["estado"];
 
 
 $id_generada = R::store($instrumento);
-move_uploaded_file($_FILES["foto"]["tmp_name"], "../imagenes/" . $id_generada . ".jpg");
+move_uploaded_file($_FILES["foto"]["tmp_name"], "../imagenes/instrumentos/" . $id_generada . ".jpg");
 
 include("registro_ok.php");
