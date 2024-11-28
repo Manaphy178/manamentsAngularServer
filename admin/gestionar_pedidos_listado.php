@@ -18,7 +18,7 @@
     }
 
     table {
-      margin: 2rem auto;
+      margin: 2rem;
       width: 100vh;
       border-collapse: collapse;
     }
@@ -44,7 +44,6 @@
     }
 
     .instrument {
-
       border-left: 1px solid black;
     }
   </style>

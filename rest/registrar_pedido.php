@@ -10,7 +10,6 @@ $pedido->telefono = $json_recibido->telefono;
 $pedido->direccion = $json_recibido->direccion;
 $pedido->provincia = $json_recibido->provincia;
 $pedido->poblacion = $json_recibido->poblacion;
-$pedido->poblacion = $json_recibido->poblacion;
 $pedido->tipotarjeta = $json_recibido->tipotarjeta;
 $pedido->numerotarjeta = $json_recibido->numerotarjeta;
 $pedido->titulartarjeta = $json_recibido->titulartarjeta;
