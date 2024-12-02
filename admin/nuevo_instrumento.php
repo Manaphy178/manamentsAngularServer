@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +9,7 @@
 
 <body>
     <?php
-    include("menu.html");
+    include("menu.php");
     ?>
     <h1>Registro de Instrumentos</h1>
     <form action="registrar_instrumento.php" method="post" enctype="multipart/form-data">

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +52,7 @@
 
 <body>
   <?php
-  include("menu.html");
+  include("menu.php");
   ?>
   <h1>Listado de pedidos en la tienda con angular</h1>
   <table>

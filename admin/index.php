@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    include("menu.html");    
+    include("menu.php");    
     ?>
     <h1>Bienvenido a la administracion de Manaments</h1>
 </body>

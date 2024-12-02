@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require "../librerias_php/setUp.php";
 
 $instrumento = R::dispense("instrumentos");
