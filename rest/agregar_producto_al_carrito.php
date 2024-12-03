@@ -11,6 +11,17 @@ session_start();
 // angular siempre va a mandar al servidor json
 $json_recibido = json_decode(file_get_contents("php://input"));
 
+
+// validar que la id y cantidad recibidas sean dos numeros:
+if (!isset($json_recibido->id) || !isset($json_recibido->cantidad)) {
+    die();
+    // die para la ejecucion de php
+}
+if (! is_int($json_recibido->id) || ! is_integer($json_recibido->cantidad)) {
+    die();
+}
+
+
 $id_producto = $json_recibido->id;
 $cantidad = $json_recibido->cantidad;
 
