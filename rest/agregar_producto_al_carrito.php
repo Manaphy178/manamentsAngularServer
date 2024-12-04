@@ -39,7 +39,7 @@ for ($i = 0; $i < count($_SESSION["carrito"]); $i++) {
     // vamos a ver si en el carrito ya esta el producto indicado
     if ($_SESSION["carrito"][$i][0] == $id_producto) {
         $producto_en_carrito = true;
-        $_SESSION["carrito"][$i][1] = $cantidad;
+        $_SESSION["carrito"][$i][1] += $cantidad;
         break;
     }
 }

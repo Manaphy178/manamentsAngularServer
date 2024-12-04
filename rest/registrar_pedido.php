@@ -17,7 +17,7 @@ if (
     !isset($json_recibido->fechacaducidad) ||
     !isset($json_recibido->ccv)
 ) {
-    die("Eror");
+    die("Error");
 }
 // expresiones regulares en php
 // nombre
