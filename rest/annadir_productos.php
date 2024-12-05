@@ -1,6 +1,8 @@
 <?php
 require_once "../librerias_php/setUp.php";
-
+$data = json_decode(file_get_contents("php://input"), true);
+$categorias = $data['categorias'] ?? [];
+$marcas = $data['marcas'] ?? [];
 
 $instrumentos = [
     [
@@ -11,7 +13,7 @@ $instrumentos = [
         "categoria" => "Cuerdas",
         "tipo" => "Acústica",
         "gamma" => "Media",
-        "estado" => "Nuevo"
+        "estado" => "Nuevo",
     ],
     [
         "nombre_instrumento" => "Piano",
@@ -21,15 +23,29 @@ $instrumentos = [
         "categoria" => "Teclas",
         "tipo" => "Digital",
         "gamma" => "Alta",
-        "estado" => "Nuevo"
-    ]
+        "estado" => "Nuevo",
+    ],
 ];
 
 foreach ($instrumentos as $instrumento) {
     $bean = R::dispense('instrumentos');
+
     foreach ($instrumento as $key => $value) {
-        $bean->$key = $value;
+        if ($key === 'marca') {
+            $marca = array_filter($marcas, fn($m) => $m['nombre'] === $value);
+            if (!empty($marca)) {
+                $bean->marca = R::load('marcas', $marca[0]['id']);
+            }
+        } elseif ($key === 'categoria') {
+            $categoria = array_filter($categorias, fn($c) => $c['nombre'] === $value);
+            if (!empty($categoria)) {
+                $bean->categoria = R::load('categorias', $categoria[0]['id']);
+            }
+        } else {
+            $bean->$key = $value;
+        }
     }
+
     R::store($bean);
 }
 echo json_encode("ok");

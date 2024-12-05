@@ -29,7 +29,7 @@ if (! preg_match("/[0-9]{9,15}$/", $json_recibido->telefono)) {
     die("telefono no aceptado desde el servidor");
 }
 // direccion
-if (! preg_match("/[a-z áéíóúñ0-9:ªº]{2,30}$/i", $json_recibido->direccion)) {
+if (! preg_match("/[a-z áéíóúñ0-9,.:ªº]{2,30}$/i", $json_recibido->direccion)) {
     die("direccion no aceptada desde el servidor");
 }
 // provincia
