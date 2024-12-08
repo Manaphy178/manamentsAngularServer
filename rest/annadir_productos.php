@@ -113,7 +113,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "Teclado Portátil PSR-EW425",
         "marca" => "Yamaha",
         "descripcion" => "Teclado portátil PSR-EW425 de Yamaha, equipado con 76 teclas sensibles al tacto, más de 800 sonidos, y características educativas avanzadas como lecciones integradas y conectividad USB, ideal para principiantes y músicos en desarrollo.",
@@ -123,7 +123,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "Sintetizador MONTAGE M",
         "marca" => "Yamaha",
         "descripcion" => "Sintetizador MONTAGE M de Yamaha, con un motor de síntesis híbrido que combina AWM2 y FM-X, permitiendo la creación de sonidos complejos y manipulaciones en tiempo real gracias a su Super Knob y funciones avanzadas de control en vivo. Ideal para músicos y productores que buscan un sintetizador de alto rendimiento.",
@@ -153,7 +153,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "GAIA 2",
         "marca" => "Roland",
         "descripcion" => "Sintetizador GAIA 2 de Roland, una potente herramienta para el diseño de sonido y la experimentación musical. Equipado con un motor de síntesis avanzado, este sintetizador es capaz de crear una amplia gama de sonidos, desde texturas ambientales hasta leads agresivos. Cuenta con un panel de control intuitivo con faders, perillas y botones iluminados para un flujo de trabajo rápido y creativo. Además, incluye polifonía mejorada, efectos integrados, y un teclado de 49 teclas sensibles al tacto, lo que lo convierte en una excelente opción tanto para estudios como para presentaciones en vivo.",
@@ -163,7 +163,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "GR-55",
         "marca" => "Roland",
         "descripcion" => "Sintetizador de guitarra GR-55 de Roland, un revolucionario procesador de guitarra que combina sintetización avanzada y modelado de amplificadores. Equipado con la tecnología COSM, este dispositivo permite transformar el sonido de tu guitarra en una amplia gama de timbres, desde emulaciones de instrumentos acústicos hasta complejos pads de sintetizador. Con 910 tonos diferentes, MIDI integrado, y capacidad para conectar una pastilla GK, es ideal tanto para guitarristas que desean expandir su paleta sonora como para músicos de estudio en busca de versatilidad.",
@@ -173,7 +173,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "Katana Artist Gen 3",
         "marca" => "Roland",
         "descripcion" => "Sintetizador de bajo Katana Artist Gen 3 de Roland, diseñado específicamente para bajistas que buscan un sonido potente y personalizado. Este sintetizador combina modelado de amplificadores con efectos premium, y ofrece un motor de sonido completamente ajustable con control de tono preciso. Incluye 5 tipos de amplificadores, efectos integrados, y un altavoz especial Waza de 12 pulgadas que proporciona un rendimiento inigualable tanto en el escenario como en el estudio.",
@@ -243,7 +243,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "modwave module WAVETABLE SYNTHESIZER",
         "marca" => "Korg",
         "descripcion" => "Sintetizador de tablas de ondas con capacidades de modulación avanzadas, ideal para diseñadores de sonido.",
@@ -253,7 +253,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "opsix module ALTERED FM SYNTHESIZER",
         "marca" => "Korg",
         "descripcion" => "Sintetizador de síntesis FM alterada, perfecto para exploración sonora y diseño de tonos únicos.",
@@ -263,7 +263,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "WAVE SEQUENCING SYNTHESIZER",
         "marca" => "Korg",
         "descripcion" => "Sintetizador de secuenciación de ondas con funciones avanzadas de manipulación de sonido.",
@@ -313,7 +313,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "CT-S200WE Casiotone",
         "marca" => "Casio",
         "descripcion" => "Sintetizador compacto y portátil, perfecto para principiantes y músicos en movimiento.",
@@ -323,7 +323,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "CT-S100 Casiotone",
         "marca" => "Casio",
         "descripcion" => "Teclado compacto diseñado para principiantes, con funciones simples y facilidad de uso.",
@@ -333,7 +333,7 @@ $instrumentos = [
         "estado" => "Nuevo"
     ],
     [
-        "categoria" => "Sintetizadores",
+        "categoria" => "Sintetizador",
         "nombre_instrumento" => "CT-S1-76BK Casiotone",
         "marca" => "Casio",
         "descripcion" => "Sintetizador portátil con 76 teclas, ideal para músicos que buscan portabilidad sin sacrificar funciones.",
@@ -442,11 +442,551 @@ $instrumentos = [
         "gamma" => "Media",
         "estado" => "Nuevo"
     ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "Les Paul Standard 60s - Bourbon Burst",
+        "marca" => "Gibson",
+        "descripcion" => "Guitarra eléctrica icónica con tono clásico y acabado en Bourbon Burst, perfecta para rock y blues.",
+        "precio" => 2500.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "Les Paul Supreme - Ebony, 3-Pickup",
+        "marca" => "Gibson",
+        "descripcion" => "Edición de lujo con 3 pastillas y un acabado elegante en Ebony, ideal para tonos versátiles.",
+        "precio" => 3500.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Premium",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "Les Paul Standard 60s Figured Top - Dark Purple Burst",
+        "marca" => "Gibson",
+        "descripcion" => "Versión moderna de la Les Paul con tapa figurada y acabado en Dark Purple Burst.",
+        "precio" => 2700.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "Les Paul Modern Figured - Cobalt Burst",
+        "marca" => "Gibson",
+        "descripcion" => "Diseño moderno con mejoras ergonómicas y acabado en Cobalt Burst.",
+        "precio" => 2800.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "Adam Jones Les Paul Standard - Antique Silverburst",
+        "marca" => "Gibson",
+        "descripcion" => "Edición especial inspirada en el guitarrista de Tool, Adam Jones, con un acabado distintivo.",
+        "precio" => 4000.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Edición Limitada",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "ES-335 - Dark Purple Burst",
+        "marca" => "Gibson",
+        "descripcion" => "Clásica guitarra semi-hueca, famosa por su versatilidad en jazz y blues.",
+        "precio" => 3200.00,
+        "tipo" => "Guitarra semi-hueca",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "ES-335 Figured - Sixties Cherry",
+        "marca" => "Gibson",
+        "descripcion" => "Versión con tapa figurada y acabado vintage en Sixties Cherry.",
+        "precio" => 3300.00,
+        "tipo" => "Guitarra semi-hueca",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "SG Standard '61 - Vintage Cherry",
+        "marca" => "Gibson",
+        "descripcion" => "Guitarra eléctrica con diseño SG clásico y tono icónico en acabado Vintage Cherry.",
+        "precio" => 2200.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "Thunderbird Bass - Tobacco Burst",
+        "marca" => "Gibson",
+        "descripcion" => "Bajo eléctrico con diseño icónico y tonos profundos, ideal para rock y metal.",
+        "precio" => 1800.00,
+        "tipo" => "Bajo eléctrico",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "Non-Reverse Thunderbird - Ebony",
+        "marca" => "Gibson",
+        "descripcion" => "Versión con diseño no reversible, acabado en Ebony y tonos versátiles.",
+        "precio" => 1700.00,
+        "tipo" => "Bajo eléctrico",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "Gene Simmons G2 Thunderbird - Ébano",
+        "marca" => "Gibson",
+        "descripcion" => "Edición especial diseñada en colaboración con Gene Simmons, perfecta para el escenario.",
+        "precio" => 2100.00,
+        "tipo" => "Bajo eléctrico",
+        "gamma" => "Edición Limitada",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "Rex Brown Signature Thunderbird - Ébano",
+        "marca" => "Gibson",
+        "descripcion" => "Bajo de firma diseñado para el bajista de Pantera, Rex Brown.",
+        "precio" => 2300.00,
+        "tipo" => "Bajo eléctrico",
+        "gamma" => "Edición Limitada",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "Les Paul Junior Tribute DC Bass - Worn Ebony",
+        "marca" => "Gibson",
+        "descripcion" => "Bajo eléctrico compacto con un diseño clásico y tono contundente.",
+        "precio" => 1500.00,
+        "tipo" => "Bajo eléctrico",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "AZES31",
+        "marca" => "Ibanez",
+        "descripcion" => "Guitarra eléctrica versátil y moderna, ideal para principiantes y profesionales.",
+        "precio" => 450.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "AZES40",
+        "marca" => "Ibanez",
+        "descripcion" => "Modelo avanzado con características mejoradas para un tono excepcional.",
+        "precio" => 550.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "AZES40L",
+        "marca" => "Ibanez",
+        "descripcion" => "Versión para zurdos de la AZES40, con el mismo diseño y calidad.",
+        "precio" => 550.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "AZ2407F Prestige",
+        "marca" => "Ibanez",
+        "descripcion" => "Guitarra de alta gama de la serie Prestige, diseñada para la máxima precisión y confort.",
+        "precio" => 2200.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "AZ2402 Prestige",
+        "marca" => "Ibanez",
+        "descripcion" => "Modelo de gama alta con construcción de precisión y componentes premium.",
+        "precio" => 2100.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "AZ2402L Prestige",
+        "marca" => "Ibanez",
+        "descripcion" => "Guitarra Prestige para zurdos, diseñada para músicos exigentes.",
+        "precio" => 2100.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Guitarra",
+        "nombre_instrumento" => "AZ24027 Prestige",
+        "marca" => "Ibanez",
+        "descripcion" => "Guitarra de 7 cuerdas de la serie Prestige, perfecta para géneros pesados y técnicos.",
+        "precio" => 2300.00,
+        "tipo" => "Guitarra eléctrica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "EHB1500",
+        "marca" => "Ibanez",
+        "descripcion" => "Bajo eléctrico de cuerpo ergonómico, ideal para tocar durante largas sesiones.",
+        "precio" => 1600.00,
+        "tipo" => "Bajo eléctrico",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "EHB1505",
+        "marca" => "Ibanez",
+        "descripcion" => "Bajo de 5 cuerdas con diseño moderno y electrónica avanzada.",
+        "precio" => 1800.00,
+        "tipo" => "Bajo eléctrico",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "EHB1505MS",
+        "marca" => "Ibanez",
+        "descripcion" => "Versión multiescala del EHB1505, optimizada para mayor rango tonal.",
+        "precio" => 1900.00,
+        "tipo" => "Bajo eléctrico multiescala",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "EHB1506MS",
+        "marca" => "Ibanez",
+        "descripcion" => "Bajo de 6 cuerdas multiescala, perfecto para bajistas que buscan versatilidad.",
+        "precio" => 2000.00,
+        "tipo" => "Bajo eléctrico multiescala",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "EHB1265MS",
+        "marca" => "Ibanez",
+        "descripcion" => "Bajo multiescala con un diseño ergonómico y gran rango de tonos.",
+        "precio" => 1700.00,
+        "tipo" => "Bajo eléctrico multiescala",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Bajo",
+        "nombre_instrumento" => "EHB1000",
+        "marca" => "Ibanez",
+        "descripcion" => "Bajo eléctrico de la serie EHB con diseño sin cabezal, ideal para portabilidad.",
+        "precio" => 1400.00,
+        "tipo" => "Bajo eléctrico",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "6-Piece Performance Series Kit",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Set de batería de 6 piezas, parte de la serie Performance, conocida por su calidad y resonancia.",
+        "precio" => 3200.00,
+        "tipo" => "Batería acústica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "4-Piece Performance Series Kit",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Set de batería de 4 piezas, ideal para estudios y presentaciones en vivo.",
+        "precio" => 2500.00,
+        "tipo" => "Batería acústica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "DWe Drum Kit Bundle, 4-Piece",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Batería electrónica de 4 piezas, incluye todos los elementos esenciales para empezar.",
+        "precio" => 1800.00,
+        "tipo" => "Batería electrónica",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "DWe Drum Kit Bundle, 5-Piece",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Batería electrónica de 5 piezas, perfecta para estudios y práctica en casa.",
+        "precio" => 2000.00,
+        "tipo" => "Batería electrónica",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "Design 4-Piece Kit, Limited",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Edición limitada de la serie Design, con un diseño exclusivo y componentes de alta calidad.",
+        "precio" => 2700.00,
+        "tipo" => "Batería acústica",
+        "gamma" => "Edición Limitada",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "DWe Hi-Hat Cymbal, 14 inch",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Platillo de Hi-Hat de 14 pulgadas, diseñado para un sonido nítido y definido.",
+        "precio" => 400.00,
+        "tipo" => "Platillo",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "DWe Electronic Crash/Ride Cymbal 18 inch",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Platillo electrónico de 18 pulgadas, perfecto para setups híbridos.",
+        "precio" => 350.00,
+        "tipo" => "Platillo Electrónico",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "DW DWe Electronic Cymbal Pack, 3-Piece",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Set de 3 platillos electrónicos, ideal para expandir kits electrónicos.",
+        "precio" => 800.00,
+        "tipo" => "Platillo Electrónico",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "DW DWe Electronic Cymbal Pack, 4-Piece",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Set de 4 platillos electrónicos, diseñado para mayor versatilidad en kits de batería.",
+        "precio" => 1000.00,
+        "tipo" => "Platillo Electrónico",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "Design Maple Snare 6x14, Limited",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Caja de madera de arce de 6x14 pulgadas, edición limitada con un tono profundo.",
+        "precio" => 500.00,
+        "tipo" => "Caja",
+        "gamma" => "Edición Limitada",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "Design Series Maple Snare, 6x14",
+        "marca" => "DrumWorkshop",
+        "descripcion" => "Caja de la serie Design con un tono brillante y versátil.",
+        "precio" => 450.00,
+        "tipo" => "Caja",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "Masterworks",
+        "marca" => "Pearl",
+        "descripcion" => "Batería de alta gama completamente personalizable, diseñada para ofrecer la máxima calidad sonora.",
+        "precio" => 7000.00,
+        "tipo" => "Batería acústica",
+        "gamma" => "Premium",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "Masters Maple Gum",
+        "marca" => "Pearl",
+        "descripcion" => "Set de batería de arce y goma, perfecto para un tono cálido y resonante.",
+        "precio" => 4000.00,
+        "tipo" => "Batería acústica",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "Crystal Beat",
+        "marca" => "Pearl",
+        "descripcion" => "Batería transparente de acrílico, diseñada para destacar visual y sonoramente en el escenario.",
+        "precio" => 3000.00,
+        "tipo" => "Batería acústica",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "Decade Maple Artisan",
+        "marca" => "Pearl",
+        "descripcion" => "Set de batería artesanal de arce, perfecto para músicos que buscan un tono clásico.",
+        "precio" => 2000.00,
+        "tipo" => "Batería acústica",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "Decade Maple",
+        "marca" => "Pearl",
+        "descripcion" => "Batería versátil de arce, ideal para estudios y presentaciones en vivo.",
+        "precio" => 1500.00,
+        "tipo" => "Batería acústica",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Batería",
+        "nombre_instrumento" => "Roadshow",
+        "marca" => "Pearl",
+        "descripcion" => "Set de batería para principiantes, incluye todo lo necesario para empezar a tocar.",
+        "precio" => 800.00,
+        "tipo" => "Batería acústica",
+        "gamma" => "Baja",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "Stave Craft",
+        "marca" => "Pearl",
+        "descripcion" => "Caja artesanal de alta gama, diseñada para ofrecer un tono profundo y resonante.",
+        "precio" => 900.00,
+        "tipo" => "Caja",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "Sensitone",
+        "marca" => "Pearl",
+        "descripcion" => "Caja versátil con un tono brillante, ideal para todo tipo de géneros musicales.",
+        "precio" => 600.00,
+        "tipo" => "Caja",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "Hybrid Exotic",
+        "marca" => "Pearl",
+        "descripcion" => "Caja de diseño híbrido con materiales exóticos, perfecta para músicos que buscan un sonido único.",
+        "precio" => 750.00,
+        "tipo" => "Caja",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "Effects Snares",
+        "marca" => "Pearl",
+        "descripcion" => "Caja diseñada para efectos especiales y sonidos únicos en el estudio o en vivo.",
+        "precio" => 500.00,
+        "tipo" => "Caja",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "UltraCast",
+        "marca" => "Pearl",
+        "descripcion" => "Caja de aluminio fundido, conocida por su proyección y potencia sonora.",
+        "precio" => 650.00,
+        "tipo" => "Caja",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "String Cajon Seguiriya Line, Indian Heartwood",
+        "marca" => "Meinl",
+        "descripcion" => "Cajón de la línea Seguiriya, hecho de Indian Heartwood, con cuerdas internas ajustables para un sonido flamenco auténtico.",
+        "precio" => 350.00,
+        "tipo" => "Cajón",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "String Cajon Fandago Line, Indian Heartwood, Tulip Poplar",
+        "marca" => "Meinl",
+        "descripcion" => "Cajón de la línea Fandago, construido con Indian Heartwood y Tulip Poplar para un tono cálido y profundo.",
+        "precio" => 320.00,
+        "tipo" => "Cajón",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "String Cajon Martinete Line, Brazilian Ironwood",
+        "marca" => "Meinl",
+        "descripcion" => "Cajón de la línea Martinete, fabricado con Brazilian Ironwood para una proyección potente y clara.",
+        "precio" => 400.00,
+        "tipo" => "Cajón",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "String Cajon Cantina Line Limba",
+        "marca" => "Meinl",
+        "descripcion" => "Cajón de la línea Cantina, hecho de Limba, ideal para tonos equilibrados y versátiles.",
+        "precio" => 300.00,
+        "tipo" => "Cajón",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "String Cajon Buleria Line, Mongoy",
+        "marca" => "Meinl",
+        "descripcion" => "Cajón de la línea Buleria, con acabado en Mongoy, proporciona un sonido profundo y resonante perfecto para flamenco.",
+        "precio" => 370.00,
+        "tipo" => "Cajón",
+        "gamma" => "Alta",
+        "estado" => "Nuevo"
+    ],
+    [
+        "categoria" => "Percusión",
+        "nombre_instrumento" => "String Cajon Cantina Line Brown Eucalyptus",
+        "marca" => "Meinl",
+        "descripcion" => "Cajón de la línea Cantina con acabado en Brown Eucalyptus, ofreciendo un sonido cálido y redondo.",
+        "precio" => 330.00,
+        "tipo" => "Cajón",
+        "gamma" => "Media",
+        "estado" => "Nuevo"
+    ]
 ];
 
 foreach ($instrumentos as $instrumento) {
     $bean = R::dispense('instrumentos');
-
+    $bean->ventas = rand(1, 300);
     foreach ($instrumento as $key => $value) {
         if ($key === 'marca') {
             $marca = R::findOne('marcas', 'nombre_marca = ?', [$value]);
