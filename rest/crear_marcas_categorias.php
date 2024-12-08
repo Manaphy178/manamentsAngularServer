@@ -11,7 +11,7 @@ $marcas = [
     "Gibson",
     "Ibanez",
     "Pearl",
-    "Drum Workshop",
+    "DrumWorkshop",
     "Meinl"
 ];
 $categorias = [
@@ -78,7 +78,6 @@ $relaciones = [
 ];
 
 // Crear o verificar marcas
-$marcaBeans = [];
 foreach ($marcas as $nombreMarca) {
     $marca = R::findOne('marcas', 'nombre_marca = ?', [$nombreMarca]);
     if (!$marca) {
@@ -86,11 +85,12 @@ foreach ($marcas as $nombreMarca) {
         $marca->nombre_marca = $nombreMarca;
         R::store($marca);
     }
-    $marcaBeans[$nombreMarca] = $marca;
 }
+echo ("");
+echo ("se han creado las marcas ");
 
 // Crear o verificar categorías
-$categoriaBeans = [];
+
 foreach ($categorias as $nombreCategoria) {
     $categoria = R::findOne('categorias', 'nombre_categoria = ?', [$nombreCategoria]);
     if (!$categoria) {
@@ -98,34 +98,10 @@ foreach ($categorias as $nombreCategoria) {
         $categoria->nombre_categoria = $nombreCategoria;
         R::store($categoria);
     }
-    $categoriaBeans[$nombreCategoria] = $categoria;
 }
+echo ("");
+echo ("se han creado las categorias ");
 
-// Relacionar marcas con categorías
-foreach ($relaciones as $nombreMarca => $categoriasRelacionadas) {
-    if (isset($marcaBeans[$nombreMarca])) {
-        $marca = $marcaBeans[$nombreMarca];
 
-        foreach ($categoriasRelacionadas as $nombreCategoria) {
-            if (isset($categoriaBeans[$nombreCategoria])) {
-                $categoria = $categoriaBeans[$nombreCategoria];
-
-                // Verificar si la relación ya existe
-                $existeRelacion = R::findOne(
-                    'categoria_marca',
-                    'marca_id = ? AND categoria_id = ?',
-                    [$marca->id, $categoria->id]
-                );
-
-                if (!$existeRelacion) {
-                    $relacion = R::dispense('categoria_marca');
-                    $relacion->marca = $marca;
-                    $relacion->categoria = $categoria;
-                    R::store($relacion);
-                }
-            }
-        }
-    }
-}
 
 echo json_encode("ok");
