@@ -17,7 +17,7 @@ $instrumentos = R::getAll("
         i.ventas > 0
     ORDER BY 
         i.ventas DESC
-    LIMIT 5
+    LIMIT 8
 ");
 
 echo json_encode($instrumentos);
