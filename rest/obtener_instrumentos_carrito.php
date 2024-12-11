@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION["carrito"])) {
+if (isset($_SESSION["usuario"])) {
     // de cada id de producto que haya en el carrito, 
     // vamos a savar los datos de ese producto de base de datos
     // toda esa informacion sera la que le demos a la parte cliente

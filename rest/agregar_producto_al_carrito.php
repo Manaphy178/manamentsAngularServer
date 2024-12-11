@@ -26,10 +26,13 @@ $id_producto = $json_recibido->id;
 $cantidad = $json_recibido->cantidad;
 
 // vamos a guardar el carrito en una variable de sesion, si no existe la creamos
-if (!isset($_SESSION["carrito"])) {
-    $_SESSION["carrito"] = array();
+if (isset($_SESSION["usuario"])) {
+    if (!isset($_SESSION["carrito"])) {
+        $_SESSION["carrito"] = array();
+    }
+}else{
+    echo json_encode("No iniciaste sesion");
 }
-
 
 // en $_SESSION["carrito"] es un array donde cada elemento va a ser un array
 // dicho array tendra en su primera posicion la id de producto y en su segunda la cantidad

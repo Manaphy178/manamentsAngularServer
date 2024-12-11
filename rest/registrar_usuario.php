@@ -5,12 +5,13 @@ require_once "../librerias_php/setUp.php";
 $json_recibido = json_decode(file_get_contents("php://input"));
 
 // validacion:
-if (!isset($json_recibido->nombre) ||
-!isset($json_recibido->apellido) ||
-!isset($json_recibido->email) ||
-!isset($json_recibido->password) ||
-!isset($json_recibido->username) ||
-!isset($json_recibido->postal)
+if (
+    !isset($json_recibido->nombre) ||
+    !isset($json_recibido->apellido) ||
+    !isset($json_recibido->email) ||
+    !isset($json_recibido->password) ||
+    !isset($json_recibido->username) ||
+    !isset($json_recibido->postal)
 ) {
     die("Error");
 }
@@ -52,7 +53,6 @@ $usuario->postal = $json_recibido->postal;
 // Para tener un control de quien esta registrando el pedido:
 //  vamos a guardar unos datos del cliente:
 $usuario->ip = $_SERVER["REMOTE_ADDR"];
-
 R::store($usuario);
 
 echo json_encode("ok");
