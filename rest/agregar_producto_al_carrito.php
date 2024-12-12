@@ -32,6 +32,7 @@ if (isset($_SESSION["usuario"])) {
     }
 }else{
     echo json_encode("No iniciaste sesion");
+    die();
 }
 
 // en $_SESSION["carrito"] es un array donde cada elemento va a ser un array
