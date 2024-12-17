@@ -28,15 +28,8 @@ if (!isset($_SESSION["admin"])) {
         <a href="gestionar_usuarios.php"><span>Gestionar Usuario</span></a>
       </li>
       <li>
-        <a href="gestionar_categorias.php"><span>Gestionar Categorias</span></a>
-      </li>
-      <li>
         <a href="cerrar_sesion.php"><span>Cerrar Sesion</span></a>
       </li>
-      <li>
-        <a href="http://localhost:4200/">Volver a la parte publica</a>
-      </li>
-      <li><a href="../../">Volver a cliente (web)</a></li>
     </ul>
   </nav>
 </header>

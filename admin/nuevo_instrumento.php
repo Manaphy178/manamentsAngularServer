@@ -2,6 +2,8 @@
 require "../librerias_php/setUp.php";
 $marcas = R::getAll("SELECT * FROM marcas");
 $categorias = R::getAll("SELECT * FROM categorias");
+$tipos = R::getAll("SELECT DISTINCT tipo FROM instrumentos");
+$gammas = R::getAll("SELECT DISTINCT gamma FROM instrumentos")
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,24 +25,17 @@ $categorias = R::getAll("SELECT * FROM categorias");
         <div class="typeGamma">
             <label for="tipo" class="type">Tipo:</label>
             <select id="tipo" name="tipo" class="sType">
-                <option value="Eléctrico">
-                    Eléctrico
-                </option>
-                <option value="Acústico">
-                    Acústico
-                </option>
+            <?php
+                foreach ($tipos as $tipo) { ?>
+                    <option value="<?php echo $tipo["tipo"]; ?>"><?php echo $tipo["tipo"]; ?></option>
+                <?php } ?>
             </select>
             <label for="gamma" class="gamma">Gamma:</label>
             <select name="gamma" id="gamma" class="sGamma">
-                <option value="Baja">
-                    Baja
-                </option>
-                <option value="Media">
-                    Media
-                </option>
-                <option value="Alta">
-                    Alta
-                </option>
+                <?php
+                foreach ($gammas as $gamma) { ?>
+                    <option value="<?php echo $gamma["gamma"]; ?>"><?php echo $gamma["gamma"]; ?></option>
+                <?php } ?>
             </select>
         </div>
         <div class="brandCategorie">
