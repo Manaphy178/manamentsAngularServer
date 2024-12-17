@@ -1,0 +1,63 @@
+:root {
+  --claro: #d2d4d1;
+  --oscuro: #554835;
+  --fondo: #d7d3cd;
+  --fondo-our-products: #c9beae;
+  --producto_detalles: #9f755d;
+  --fondo-all-products: #c9beae;
+  --fondo-single-product: #c0ab8a;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--fondo);
+  color: var(--oscuro);
+}
+.titleListado {
+  margin-left: 1rem;
+}
+table {
+  margin: 0 auto;
+  width: 70%;
+  border-collapse: collapse;
+  background-color: var(--fondo-our-products);
+}
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--oscuro);
+}
+th {
+  background-color: var(--producto_detalles);
+  color: var(--claro);
+}
+tr:nth-child(even) {
+  background-color: var(--fondo-single-product);
+}
+img {
+  height: 150px;
+  object-fit: cover;
+}
+.action-button {
+  background-color: var(--oscuro);
+  color: var(--claro);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.addButton {
+  background-color: var(--producto_detalles);
+  color: var(--claro);
+  padding: 0.5rem 1.25rem;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: bold;
+}
+.addButton > a {
+  color: var(--claro);
+  text-decoration: none;
+}

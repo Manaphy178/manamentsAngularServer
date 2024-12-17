@@ -1,10 +1,15 @@
-<?php session_start(); ?>
+<?php session_start();
+require "../librerias_php/setUp.php";
+$marcas = R::getAll("SELECT * FROM marcas");
+$categorias = R::getAll("SELECT * FROM categorias");
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8" />
     <title>Registro de Instrumentos</title>
+    <link rel="stylesheet" href="../css/nuevoInstrumentoAdmin.css" />
 </head>
 
 <body>
@@ -12,43 +17,78 @@
     include("menu.php");
     ?>
     <h1>Registro de Instrumentos</h1>
-    <form action="registrar_instrumento.php" method="post" enctype="multipart/form-data">
-        <p>
-            <label for="nombre_instrumento">Nombre Instrumento:</label>
-            <input type="text" id="nombre_instrumento" name="nombre_instrumento" />
-        </p>
-        <p>
+    <form action="registrar_instrumento.php" method="post" enctype="multipart/form-data" class="nuevoForm">
+        <label for="nombre_instrumento">Nombre Instrumento:</label>
+        <input type="text" id="nombre_instrumento" name="nombre_instrumento" />
+        <div class="typeGamma">
+            <label for="tipo" class="type">Tipo:</label>
+            <select id="tipo" name="tipo" class="sType">
+                <option value="Eléctrico">
+                    Eléctrico
+                </option>
+                <option value="Acústico">
+                    Acústico
+                </option>
+            </select>
+            <label for="gamma" class="gamma">Gamma:</label>
+            <select name="gamma" id="gamma" class="sGamma">
+                <option value="Baja">
+                    Baja
+                </option>
+                <option value="Media">
+                    Media
+                </option>
+                <option value="Alta">
+                    Alta
+                </option>
+            </select>
+        </div>
+        <div class="brandCategorie">
+            <label for="marca"" class=" brand">Marca:</label>
+            <select name="marca" id="marca" class="sBrand">
+                <?php
+                foreach ($marcas as $marca) { ?>
+                    <option value="<?php echo $marca['nombre_marca']; ?>"><?php echo $marca['nombre_marca']; ?></option>
+                <?php } ?>
+            </select>
+            <label
+                for="categoria"
+                class="categorie">Categoría:</label>
+            <select
+                name="categoria"
+                id="categoria"
+                class="sCategorie">
+                <?php
+                foreach ($categorias as $categoria) { ?>
+                    <option value="<?php echo $categoria['nombre_categoria']; ?>"><?php echo $categoria['nombre_categoria']; ?></option>
+                <?php } ?>
+            </select>
+        </div>
+        <label
+            class="descripcion"
+            for="descripcion">Descripción</label>
+        <textarea
+            cols="20"
+            rows="5"
+            name="descripcion"
+            id="descripcion"
+            class="descripcion"></textarea>
+
+        <div class="precio">
             <label for="precio">Precio:</label>
-            <input type="number" id="precio" name="precio" />
-        </p>
-        <p>
-            <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion" cols="30" rows="10"></textarea>
-        </p>
-        <p>
-            <label for="marca">Marca:</label>
-            <input type="text" id="marca" name="marca" />
-        </p>
-        <p>
-            <label for="categoria">Categoría:</label>
-            <input type="text" id="categoria" name="categoria" />
-        </p>
-        <p>
-            <label for="tipo">Tipo:</label>
-            <input type="text" id="tipo" name="tipo" />
-        </p>
-        <p>
-            <label for="gamma">Gamma:</label>
-            <input type="text" id="gamma" name="gamma" />
-        </p>
+            <input
+                type="number"
+                name="precio"
+                id="precio"
+                step="0.1" />
+        </div>
+        <!-- meter ventas -->
         <p>
             <label for="estado">Estado:</label>
             <input type="text" id="estado" name="estado" />
         </p>
-        <p>
-            <label for="foto">Foto:</label>
-            <input type="file" id="foto" name="foto" />
-        </p>
+        <label for="foto" class="foto">Foto de instrumento</label>
+        <input type="file" name="foto" id="foto" />
         <p>
             <input type="submit" value="Registrar" />
         </p>

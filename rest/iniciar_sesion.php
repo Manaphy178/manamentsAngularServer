@@ -17,7 +17,11 @@ $usuario = R::findOne("usuarios", "username = ?", [$json_recibido->username]);
 if ($usuario == null) {
     die("Error de usuario");
 }
+
 if ($json_recibido->password == $usuario->password) {
+    $usuario->ip = $_SERVER["REMOTE_ADDR"];
+    $usuario->fecha_ultima_sesion = date("Y-m-d H:i:s");
+    R::store($usuario);
     $_SESSION["usuario"] = $usuario;
     // $carrito_id = $_SESSION["carrito"];
     // $carrito_id_serializado = serialize($carrito_id);

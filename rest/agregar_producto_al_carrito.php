@@ -30,7 +30,7 @@ if (isset($_SESSION["usuario"])) {
     if (!isset($_SESSION["carrito"])) {
         $_SESSION["carrito"] = array();
     }
-}else{
+} else {
     echo json_encode("No iniciaste sesion");
     die();
 }
