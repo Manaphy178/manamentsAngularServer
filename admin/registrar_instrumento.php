@@ -7,6 +7,7 @@ $instrumento->precio = $_POST["precio"];
 $instrumento->descripcion = $_POST["descripcion"];
 $instrumento->tipo = $_POST["tipo"];
 $instrumento->gamma = $_POST["gamma"];
+$instrumento->ventas = $_POST["ventas"];
 $instrumento->estado = $_POST["estado"];
 
 // Manejar la relación con la marca

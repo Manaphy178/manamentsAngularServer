@@ -5,18 +5,19 @@ require "../librerias_php/setUp.php";
 // este parametro vale eliminar
 if (isset($_GET["accion"]) && $_GET["accion"] == "eliminar") {
     // echo "Se quiere eliminar un registro, antes de volver a mostra el listado";
-    $id_eliminar = $_GET["id"];
-
-    R::exec("delete from instrumentos where id=$id_eliminar");
+    $instrumentoE = R::load("instrumentos", $_GET["id"]);
+    $marca = R::load("marcas", $instrumentoE->marca_id);
+    R::exec("delete from instrumentos where id=" . $instrumentoE->id);
     // lo siguiente borra el archivo indicado:
     // lo primero, comprobamos que el archivo exista
-    $archivo = '../imagenes/instrumentos/$id_eliminar.jpg';
+    $archivo = ('../imagenes/' . $marca->nombre_marca . '/instrumento/' . $instrumentoE->id . '.jpg'); //'../imagenes/instrumentos/$id_eliminar.jpg';
 
     if (file_exists($archivo)) {
-        echo "El archivo existe";
-        unlink("../imagenes/instrumentos/$id_eliminar.jpg");
+        unlink("../imagenes/" . $marca->nombre_marca . "/instrumento/" . $instrumentoE->id . ".jpg");
     }
 }
+
+
 $instrumentos = R::getAll("SELECT 
     i.id, 
     i.nombre_instrumento, 

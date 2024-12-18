@@ -22,10 +22,12 @@
                     <th>Nombre</th>
                     <th>Marca</th>
                     <th>Categoría</th>
+                    <th>Tipo</th>
                     <th>Precio</th>
                     <th>Ventas</th>
                     <th>Gamma</th>
                     <th>Estado</th>
+                    <th>Editar</th>
                     <th>Borrar</th>
                 </tr>
             </thead>
@@ -41,10 +43,14 @@
                         <td><?php echo $instrumento["nombre_instrumento"] ?></td>
                         <td><?php echo $instrumento["marca"] ?></td>
                         <td><?php echo $instrumento["categoria"] ?></td>
+                        <td><?php echo $instrumento["tipo"] ?></td>
                         <td><?php echo $instrumento["precio"] ?></td>
                         <td><?php echo $instrumento["ventas"] ?></td>
                         <td><?php echo $instrumento["gamma"] ?></td>
                         <td><?php echo $instrumento["estado"] ?></td>
+                        <td>
+                            <a href="editar_instrumento.php?id=<?= $instrumento["id"] ?>">Editar Instrumento</a>
+                        </td>
                         <td>
                             <a onclick="return confirm('Estas seguro?')" href="?accion=eliminar&id=<?= $instrumento["id"] ?>">Eliminar Instrumento</a>
                         </td>
