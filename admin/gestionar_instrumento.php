@@ -16,6 +16,11 @@ if (isset($_GET["accion"]) && $_GET["accion"] == "eliminar") {
         unlink("../imagenes/" . $marca->nombre_marca . "/instrumento/" . $instrumentoE->id . ".jpg");
     }
 }
+if (isset($_GET["accion"]) && $_GET["accion"] == "editar") {
+    $id_editar = $_GET["id"];
+    header("Location: editar_instrumento.php?id=$id_editar");
+    exit;
+}
 
 
 $instrumentos = R::getAll("SELECT 

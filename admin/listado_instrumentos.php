@@ -49,7 +49,7 @@
                         <td><?php echo $instrumento["gamma"] ?></td>
                         <td><?php echo $instrumento["estado"] ?></td>
                         <td>
-                            <a href="editar_instrumento.php?id=<?= $instrumento["id"] ?>">Editar Instrumento</a>
+                            <a href="?accion=editar&id=<?= $instrumento["id"] ?>">Editar Instrumento</a>
                         </td>
                         <td>
                             <a onclick="return confirm('Estas seguro?')" href="?accion=eliminar&id=<?= $instrumento["id"] ?>">Eliminar Instrumento</a>

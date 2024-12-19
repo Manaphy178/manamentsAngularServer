@@ -1,7 +1,18 @@
 <?php session_start();
 require "../librerias_php/setUp.php";
+if (!isset($_SESSION["id"])) {
+    die("producto no encontrado");
+}
 $id_instrumento = $_GET["id"];
-$instrumento = R::findOne("instrumentos", "id = ?", [$id_instrumento]);
+
+$instrumento = R::load("instrumentos",  $id_instrumento);
+if ($instrumento->id == 0) {
+    die("producto no encontrado");
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
+}
 $marcas = R::getAll("SELECT * FROM marcas");
 $categorias = R::getAll("SELECT * FROM categorias");
 $tipos = R::getAll("SELECT DISTINCT tipo FROM instrumentos");
@@ -26,7 +37,7 @@ $marca_ruta = R::findOne("marcas", "id = ?", [$instrumento["marca_id"]]);
     ?>
     <div class="container">
         <h1 class="tituloEditar">Editar Instrumento</h1>
-        <form action="guardar_cambios_instrumento.php" method="post" enctype="multipart/form-data" class="editForm">
+        <form action="editar_instrumento.php?id=<?php echo $instrumento["id"]; ?>" method="post" enctype="multipart/form-data" class="editForm">
             <div class="contImg">
                 <img
                     style="max-width: 200px; max-height: 300px"
@@ -120,7 +131,6 @@ $marca_ruta = R::findOne("marcas", "id = ?", [$instrumento["marca_id"]]);
                     required
                     value="<?php echo $instrumento["ventas"]; ?>" />
             </div>
-            <input type="hidden" name="id" value="<?php echo $instrumento["id"]; ?>">
             <label for="foto" class="foto">Foto de instrumento</label>
             <input type="file" name="foto" id="foto" />
             <p>
