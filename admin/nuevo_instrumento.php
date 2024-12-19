@@ -12,6 +12,7 @@ $gammas = R::getAll("SELECT DISTINCT gamma FROM instrumentos");
     <meta charset="UTF-8" />
     <title>Registro de Instrumentos</title>
     <link rel="stylesheet" href="../css/nuevoInstrumentoAdmin.css" />
+    <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico" />
 </head>
 
 <body>
